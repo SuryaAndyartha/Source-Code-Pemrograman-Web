@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = "id">
+
+<head>
+  <meta charset = "UTF-8">
+  <title> Form Registrasi Mahasiswa Dinamis </title>
+  <link rel = "stylesheet" href = "style.css"> <!-- Menghubungkan HTML dengan file CSS bernama style.css -->
+</head>
+
+<body>
+  <div class = "form-container">
+    <h2> Registrasi Mahasiswa FTEIC </h2>
+    <form id = "registrasiForm">
+        <!-- Isi Form -->
+        <div class = "form-group">
+            <label for = "nama"> Nama Mahasiswa </label>
+            <input type = "text" id = "nama" name = "nama" autocomplete = "off" placeholder = "Masukkan nama...">
+            <!-- Memberikan daftar nama rekomendasi kepada pengguna -->
+            <div id = "suggestions" class = "suggestions" style = "display: none;"></div>
+        </div>
+        <div class = "form-group">
+            <label for = "email"> Email </label>
+            <input type = "email" id = "email" name = "email" placeholder = "Masukkan email aktif...">
+        </div>
+        <div class = "form-group">
+            <label for = "jurusan"> Jurusan </label>
+            <select id = "jurusan" name = "jurusan">
+                <option value = ""> -- Pilih Jurusan -- </option>
+                <option value = "elektro"> Teknik Elektro </option>
+                <option value = "informatika"> Teknik Informatika </option>
+                <option value = "sistem_informasi"> Sistem Informasi </option>
+                <option value = "biomedik"> Teknik Biomedik </option>
+                <option value = "komputer"> Teknik Komputer </option>
+                <option value = "teknologi_informasi"> Teknologi Informasi </option>
+            </select>
+        </div>
+        <div class = "form-group">
+            <label for = "prodi"> Program Studi </label>
+            <select id = "prodi" name = "prodi">
+                <option value = ""> -- Pilih Program Studi -- </option>
+            </select>
+        </div>
+        <button type = "submit" class="submit-btn"> Daftar </button>
+        <div id="notification" class="notification hidden"></div>
+        <!-- Isi Form -->
+    </form>
+  </div>
+
+  <script src = "script.js"></script> <!-- Menghubungkan HTML dengan file JS bernama script.js -->
+</body>
+</html>
