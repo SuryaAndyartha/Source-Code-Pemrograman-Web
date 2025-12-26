@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Cari Kode Pos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Cari Kode Pos</h2>
+    <form id="kodePosForm">
+      <div class="form-group">
+        <label for="provinsi">Provinsi</label>
+        <select id="provinsi">
+          <option value="">-- Pilih Provinsi --</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="kota">Kabupaten/Kota</label>
+        <select id="kota">
+          <option value="">-- Pilih Kabupaten/Kota --</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="kodepos">Kode Pos</label>
+        <input type="number" id="kodepos" placeholder="Masukkan kode pos...">
+      </div>
+
+      <button type="submit" class="submit-btn">Cek Kode Pos</button>
+    </form>
+
+    <div id="hasil" class="hasil"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
